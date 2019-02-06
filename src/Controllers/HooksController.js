@@ -228,6 +228,8 @@ function wrapToHTTPRequest(hook, key) {
       url: hook.url,
       headers: {
         'Content-Type': 'application/json',
+        'transfer-encoding':'',
+        'X-Stefans':'1'
       },
       body: jsonBody,
       method: 'POST',
